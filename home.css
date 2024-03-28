@@ -1,0 +1,244 @@
+/*Set the width to 10% for it to adjust when screen is resized, it is also set to left to stick to the left side with a little allowance*/
+#webpage-logo {
+    width: 10%;
+    height: 7%;
+    left: 5px;
+    position: absolute;
+}
+
+body{
+    background-color: #32221c;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex-direction: column;
+    
+}
+
+header{
+    
+    background-color: #462201;
+    display: flex;
+    width: 100%;
+    max-height: fit-content;
+    justify-content: right;
+    align-items: right;
+    float: right;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+ul {
+    list-style: none;
+    background: #462201;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li .nav-DD-link {
+    display:block;
+    padding: 15px 50.4px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    
+}
+
+ul li ul.dropdown li {
+    display: block;
+}
+
+ul li ul.dropdown {
+    width: 100%;
+    background: rgb(220, 64, 21);
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li .nav-DD-link:hover {
+    background: rgb(215, 91, 8);
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+ul li ul.dropdown :hover{
+    background: rgb(180, 74, 4);
+}
+
+
+.buttonarea {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+}
+
+
+.dropdown-container {
+    display: flex;
+    flex-direction: column; /* Align as a column */
+    justify-content: center; /* Center vertically */    
+    height: 100%; /* Set the height to 100% of the viewport height */    
+}
+
+.dropdown-btn {
+    background-color: #462201;
+    color: #fff;
+    padding: 15px 10px; /* Adjust padding for button size */
+    border: none;
+    cursor: pointer;
+    margin-bottom: 100px; /* Add space between dropdowns */
+    position: relative;
+    border-radius: 10px; /* Round corners */
+    
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(215, 91, 8);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 130%; /* Center vertically */
+    left: 100%;
+    transform: translateY(-50%); /* Center vertically */
+    border-radius: 10px; /* Round corners */
+}
+
+.dropdown-btn:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 5px; /* Round corners for dropdown items */
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(180, 74, 4);
+}
+
+.image_container {
+    margin: auto;
+    
+}
+
+.slider-wrapper {
+    position : relative;
+    width: 60rem;
+    margin-left: 13%;
+   
+    
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    scroll-behavior: smooth;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    
+}
+
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start ;
+    object-fit: cover;
+}
+
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index:1;
+}
+
+.slider-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250 ms;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}
+
+p {
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.wrapper-div{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    height: 53.85rem;
+    background-color: white;
+    margin: auto;
+    margin-top: 1.4%;
+    margin-left:4%;
+    border-style: solid;
+    border-bottom: none
+}
+
+.area{
+    display: flex;
+    flex-direction: row;
+    width: 117.43rem;
+    height: 54rem;
+    
+}
+
+.title-area{
+    width:100%;
+    height: 5rem;
+    background-color: aqua;
+}
+
+.sypnosis{
+    width: 30%;
+    height: 45rem;
+    background-color: lightgreen;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+.area2{
+    width: 85%;
+    height: 53.85rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.text-sypno{
+    text-align: center;
+    margin-top: 90%;
+}

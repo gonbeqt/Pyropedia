@@ -1,0 +1,164 @@
+#webpage-logo{
+    width: 10%;
+    height: 7%;
+    left: 5px;
+    position: absolute;
+}
+
+body{
+    background-color: #32221c;
+}
+
+header{
+    display: flex;
+    background-color: #462201;
+    display: flex;
+    width: 100%;
+    max-height: fit-content;
+    justify-content: right;
+    align-items: right;
+    float: right;
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+    list-style: none;
+    background: #462201;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li .nav-DD-link {
+    display:block;
+    padding: 15px 50.4px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+ul li ul.dropdown li {
+    display: block;
+}
+
+ul li ul.dropdown {
+    width: 100%;
+    background: rgb(220, 64, 21);
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li .nav-DD-link:hover {
+    background: rgb(215, 91, 8);
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+ul li ul.dropdown :hover{
+    background: rgb(180, 74, 4);
+}
+.left-container{    
+    top:6%;
+    left: 15%; 
+    width: 40%;
+    border-style: solid;
+    height: 100vh;
+    position: absolute; 
+}
+.image{
+    width: 30%;
+    top:10%;
+    left: 8%;
+    position: absolute;
+}
+.company{
+    padding:10px;
+    width: 40%;
+    position: absolute;
+    top:8%;
+    left: 34%
+}
+.company h2{
+    bottom: 110%;
+    left: 20%;
+    position: absolute;
+}
+.company p{
+    padding: 10px;
+    width: 130%;
+    border-style: solid;
+    height:300px;
+}
+.mission{
+    width: 40%;
+    position: absolute;
+    top:55%;
+    left:8%
+}
+.mission h2{
+    bottom: 105%;
+    position: absolute;
+}
+.mission p{
+    padding: 10px;
+    width: 200%;
+    border-style: solid;
+    height:350px;
+}
+.right-container{
+    top:6%;
+    left: 55.2%; 
+    width: 30%;
+    border-style: solid;
+    height: 100vh;
+    position: absolute; 
+}
+.char1{
+    position: absolute;
+    top: 5%;
+    left: 30%; 
+}
+.member h2{
+    position: absolute;
+    top: 35%;
+    left: 40%; 
+
+}
+.char2{
+    position: absolute;
+    top:45% ;
+    left: 18%;
+}
+.char3{
+    position: absolute;
+    top:45% ;
+    left: 58%;
+}
+.char4{
+    position: absolute;
+    top:65% ;
+    left: 18%;
+}
+.char5{
+    position: absolute;
+    top:65% ;
+    left: 58%;
+}    
+.char6{
+    position: absolute;
+    top:85% ;
+    left: 18%;
+}
+.char1,.char2,.char3,.char4,.char5,.char6{
+    box-shadow: 5px 10px #000000
+}

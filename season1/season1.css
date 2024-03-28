@@ -1,0 +1,1302 @@
+#webpage-logo {
+    width: 10%;
+    height: 7%;
+    left: 5px;
+    position: absolute;
+}
+body{
+    background-color: #32221c;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex-direction: column;
+    background: url(crimson.gif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+header{
+    background-color: #460202af;
+    display: flex;
+    width: 100%;
+    max-height: fit-content;
+    justify-content: right;
+    align-items: right;
+    float: right;
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ul {
+    list-style: none;
+    background: #460202af;
+}
+ul li {
+    display: inline-block;
+    position: relative;
+}
+ul li .nav-DD-link {
+    display:block;
+    padding: 15px 50.4px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+ul li ul.dropdown li {
+    display: block;
+}
+
+ul li ul.dropdown {
+    width: 100%;
+    background: rgb(220, 64, 21);
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ul li .nav-DD-link:hover {
+    background: rgb(215, 91, 8);
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+ul li ul.dropdown :hover{
+    background: rgb(180, 74, 4);
+}
+
+.title-area{
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    height: 100px;
+    color: aliceblue;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0; 
+    border-style: solid;
+    margin-left: 4%;
+    margin-top: 2%;
+    margin-bottom: 1.5%;
+}
+
+.title-area h1{
+    margin-top: 30px;
+    font-weight: 600;
+    font-size:3rem;
+}
+
+img{
+    height: 200px;
+    width: 100%;
+}
+
+.container .ep {
+    position: relative;
+    margin-right: 20px;
+    z-index: 1; 
+}
+
+.decs h2{
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    padding: 6px;
+    box-sizing: border-box;
+    color: white;
+    top: 155px;
+    opacity: 1;
+    visibility: visible;
+    font-size: 15px;
+}
+
+.vid video{
+    width: 110%;
+    height: 250px;
+}
+.vid {
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 100%;
+    right: -5% ;
+    width: 100%;
+    transition: opacity 0.3s ease;
+}
+#details{
+    font-size: 12px;
+}
+#tvrated{
+    display: inline-block;
+    border-style: groove;
+    border-color: white;
+    color: rgb(55, 218, 55);
+    border-width: 2px;
+
+}
+.rating h2{
+    font-size: 18px;
+}
+.rating{
+    margin: 5px;
+    visibility: hidden;
+    opacity: 0;
+    display: inline;
+    color: white;
+    position: absolute; 
+    width: 95%;
+    height: 120px;
+    left: 20px;
+    top:40%;
+    font-size: 15px;
+}
+
+.ep:hover ~ .vid {
+    visibility: visible;
+    opacity: 1;
+    height: 300px; 
+    width: 120%;
+    position: absolute;
+    top: 0;
+    
+}
+.ep:hover > .decs h2{
+    visibility: hidden;
+    opacity: 0;
+}
+.ep:hover img{
+    cursor: pointer;
+    opacity: 0;
+}
+
+.ep:hover ~ .vid .rating {
+    visibility: visible;
+    opacity: 0.8; 
+    background-color: rgba(49, 49, 49, 0.37);
+    bottom: 50px;
+    transition: 1s;
+    padding-left: 10px;
+    padding-top: 5px;
+    
+}
+.checked{
+    color: yellow;
+}
+
+#c1{
+    display: flex;
+    bottom: 400px;
+    position: absolute;
+    left: 10%;
+    top: 30%;
+}
+
+#c2{
+    display: flex;
+    bottom: 400px;
+    position: absolute;
+    left: 30%;
+    top: 30%;
+
+}
+
+#c3{
+    display: flex;
+    bottom: 400px;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+
+}
+#c4{
+    display: flex;
+    bottom: 400px;
+    position: absolute;
+    left: 70%;
+    top: 30%;
+
+}
+
+#c5{
+    display: flex;
+    bottom: 400px;
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    top: 60%;
+
+}
+
+#c6{
+    display: flex;
+    bottom: 400px;
+    position: absolute;
+    bottom: 5%;
+    left: 30%;
+    top: 60%;
+
+}
+
+#c7{
+    display: flex;
+    bottom: 400px;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    top: 60%;
+
+}
+
+#c8{
+    display: flex;
+    bottom: 400px;
+    position: absolute;
+    bottom: 5%;
+    left: 70%;
+    top: 60%;
+
+}
+
+ #c9{
+    display: flex;
+    bottom: 400px;
+    position: absolute;
+    bottom: -10%;
+    left: 10%;
+}
+#c10{
+    display: flex;
+    bottom: 400px;
+    position: absolute;
+    bottom: -10%;
+    left: 30%;
+}
+#c11{
+    display: flex;
+    bottom: 400px;
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+}
+#c12{
+    display: flex;
+    bottom: 400px;
+    position: absolute;
+    bottom: -10%;
+    left: 70%;
+}
+#c13{
+    display: flex;
+    bottom: 400px;
+    position: absolute;
+    bottom: -40%;
+    left: 10%;
+}
+#c14{
+    display: flex;
+    bottom: 400px;
+    position: absolute;
+    bottom: -40%;
+    left: 30%;
+}
+#c15{
+    display: flex;
+    bottom: 400px;
+    position: absolute;
+    bottom: -40%;
+    left: 50%;
+}
+#c16{
+    display: flex;
+    bottom: 400px;
+    position: absolute;
+    bottom: -40%;
+    left: 70%;
+}
+#c17{
+    display: flex;
+    bottom: 400px;
+    position: absolute;
+    bottom: -70%;
+    left: 10%;
+}
+#c18{
+    display: flex;
+    bottom: 400px;
+    position: absolute;
+    bottom: -70%;
+    left: 30%;
+}
+#c19{
+    display: flex;
+    bottom: 400px;
+    position: absolute;
+    bottom: -70%;
+    left: 50%;
+}
+#c20{
+    display: flex;
+    bottom: 400px;
+    position: absolute;
+    bottom: -70%;
+    left: 70%;
+}
+#c21{
+    display: flex;
+    bottom: 400px;
+    position: absolute;
+    bottom: -100%;
+    left: 10%;
+}
+#c22{
+    display: flex;
+    bottom: 400px;
+    position: absolute;
+    bottom: -100%;
+    left: 30%;
+}
+#c23{
+    display: flex;
+    bottom: 400px;
+    position: absolute;
+    bottom: -100%;
+    left: 50%;
+}
+#c24{
+    display: flex;
+    bottom: 400px;
+    position: absolute;
+    bottom: -100%;
+    left: 70%;
+}
+@media only screen and (min-width: 320px) and (max-width: 414px){
+    body{
+        background-position:center;
+    }
+    .ep img{
+        height: 150px;
+
+    }
+    
+     .container .ep{
+        width: 80%;
+        left: 10%;
+    }
+    #c1{
+        left: 8%;
+        width: 40%;
+        top: 50%;
+        height: 200px; 
+
+    }
+    #c2{
+        left: 53%;
+        width: 40%;
+        top: 50%;
+        height: 200px; 
+
+    }
+    .ep:hover ~ .vid,#c3 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 8%;
+        top: 80%;
+
+    }
+    .ep:hover ~ .vid,#c4 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 53%;
+        top: 80%;
+
+    }
+    .ep:hover ~ .vid,#c5 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 8%;
+        top: 110%;
+    }
+    
+    .ep:hover ~ .vid,#c6 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 53%;
+        top: 110%;
+    }
+    .ep:hover ~ .vid,#c7 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 8%;
+        top: 140%;
+    }
+    
+    .ep:hover ~ .vid,#c8 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 53%;
+        top: 140%;
+    }
+    .ep:hover ~ .vid,#c9 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 8%;
+        top: 170%;
+
+    }
+    .ep:hover ~ .vid,#c10 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 53%;
+        top: 170%;
+
+    }
+    .ep:hover ~ .vid,#c11 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 8%;
+        top: 200%;
+    }
+    
+    .ep:hover ~ .vid,#c12 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 53%;
+        top: 200%;
+    }
+    .ep:hover ~ .vid,#c13 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 8%;
+        top:230%;
+    }
+    
+    .ep:hover ~ .vid,#c14 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 53%;
+        top: 230%;
+    }
+    .ep:hover ~ .vid,#c15 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 8%;
+        top: 260%;
+    }
+    
+    .ep:hover ~ .vid,#c16 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 53%;
+        top: 260%;
+    }
+    .ep:hover ~ .vid,#c17 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 8%;
+        top:290%;
+    }
+    
+    .ep:hover ~ .vid,#c18 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 53%;
+        top: 290%;
+    }
+    .ep:hover ~ .vid,#c19 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 8%;
+        top: 320%;
+    }
+    
+    .ep:hover ~ .vid,#c20 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 53%;
+        top: 320%;
+    }
+    .ep:hover ~ .vid,#c21 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 8%;
+        top:350%;
+    }
+    
+    .ep:hover ~ .vid,#c22 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 53%;
+        top: 350%;
+    }
+    .ep:hover ~ .vid,#c23 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 8%;
+        top: 380%;
+    }
+    
+    .ep:hover ~ .vid,#c24 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 53%;
+        top: 380%;
+    }
+    
+
+    .title-area {
+        width: 70%;
+        margin-left: 15%;
+        margin-top: 20px; 
+        margin-bottom: 20px; 
+        
+    }
+    .title-area h1{
+        font-size: 30px;
+    }
+    .ep:hover ~ .vid {
+        visibility: visible;
+        opacity: 1;
+        height: 120%; 
+        width: 120%;
+        position: absolute;
+        top: 0;
+        top: -25%;  
+        left: -10%; 
+    }
+    
+    .rating{
+        font-size: 10px; 
+        height: 81px;
+        top: 95px;
+        left: -5px;
+        width: 100% ;
+    }
+    .rating h2{
+        font-size: 10px;
+    }
+    #details{
+        font-size: 7px;
+    }
+
+    .decs h2{
+        font-size: 9px;
+        top: 120px;
+       } 
+}
+   
+
+@media only screen and (min-width: 415px) and (max-width: 634px){
+    body{
+        background-position: center;
+    }
+     .container .ep{
+        width: 70%;
+        left: 10%;
+    }
+    #c1{
+        left: 11%;
+        width: 40%;
+        top: 40%;
+        height: 200px; 
+
+    }
+    #c2{
+        left: 53%;
+        width: 40%;
+        top: 40%;
+        height: 200px; 
+
+    }
+    .ep:hover ~ .vid,#c3 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 11%;
+        top: 70%;
+
+    }
+    .ep:hover ~ .vid,#c4 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 53%;
+        top: 70%;
+
+    }
+    .ep:hover ~ .vid,#c5 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 11%;
+        top: 100%;
+    }
+    
+    .ep:hover ~ .vid,#c6 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 53%;
+        top: 100%;
+    }
+    .ep:hover ~ .vid,#c7 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 11%;
+        top: 130%;
+    }
+    
+    .ep:hover ~ .vid,#c8 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 53%;
+        top: 130%;
+    }
+    .ep:hover ~ .vid,#c9 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 11%;
+        top: 160%;
+
+    }
+    .ep:hover ~ .vid,#c10 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 53%;
+        top: 160%;
+
+    }
+    .ep:hover ~ .vid,#c11 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 11%;
+        top: 190%;
+    }
+    
+    .ep:hover ~ .vid,#c12 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 53%;
+        top: 190%;
+    }
+    .ep:hover ~ .vid,#c13 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 11%;
+        top:220%;
+    }
+    
+    .ep:hover ~ .vid,#c14 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 53%;
+        top: 220%;
+    }
+    .ep:hover ~ .vid,#c15 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 11%;
+        top: 250%;
+    }
+    
+    .ep:hover ~ .vid,#c16 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 53%;
+        top: 250%;
+    }
+    .ep:hover ~ .vid,#c17 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 11%;
+        top:280%;
+    }
+    
+    .ep:hover ~ .vid,#c18 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 53%;
+        top: 280%;
+    }
+    .ep:hover ~ .vid,#c19 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 11%;
+        top: 310%;
+    }
+    
+    .ep:hover ~ .vid,#c20 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 53%;
+        top: 310%;
+    }
+    .ep:hover ~ .vid,#c21 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 11%;
+        top:340%;
+    }
+    
+    .ep:hover ~ .vid,#c22 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 53%;
+        top: 340%;
+    }
+    .ep:hover ~ .vid,#c23 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 11%;
+        top: 370%;
+    }
+    
+    .ep:hover ~ .vid,#c24 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 53%;
+        top: 370%;
+    }
+    
+
+    .title-area {
+        width: 70%;
+        margin-left: 15%;
+        margin-top: 20px; 
+        margin-bottom: 20px; 
+        
+    }
+    .title-area h1{
+        font-size: 40px;
+    }
+    .ep:hover ~ .vid {
+        visibility: visible;
+        opacity: 1;
+        height: 120%; 
+        width: 100%;
+        position: absolute;
+        top: 0;
+        top: -10%;  
+        left: -5%; 
+    }
+    .rating{
+        font-size: 10px; 
+        height: 100px;
+        top: 95px;
+        left: -5px;
+        width: 100% ;
+    }
+    .rating h2{
+        font-size: 15px;
+    }
+    #details{
+        font-size: 9px;
+    }
+
+    .decs h2{
+        font-size: 15px;
+       } 
+}
+    
+@media only screen and (min-width: 635px) and (max-width: 1035px) {
+    
+    .container .ep{
+        width: 70%;
+        left: 10%;
+    }
+    #c1{
+        left: 11%;
+        width: 40%;
+        top: 30%;
+        height: 200px; 
+
+    }
+    #c2{
+        left: 53%;
+        width: 40%;
+        top: 30%;
+        height: 200px; 
+
+    }
+    .ep:hover ~ .vid,#c3 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 11%;
+        top: 60%;
+
+    }
+    .ep:hover ~ .vid,#c4 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 53%;
+        top: 60%;
+
+    }
+    .ep:hover ~ .vid,#c5 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 11%;
+        top: 90%;
+    }
+    
+    .ep:hover ~ .vid,#c6 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 53%;
+        top: 90%;
+    }
+    .ep:hover ~ .vid,#c7 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 11%;
+        top: 120%;
+    }
+    
+    .ep:hover ~ .vid,#c8 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 53%;
+        top: 120%;
+    }
+    .ep:hover ~ .vid,#c9 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 11%;
+        top: 150%;
+
+    }
+    .ep:hover ~ .vid,#c10 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 53%;
+        top: 150%;
+
+    }
+    .ep:hover ~ .vid,#c11 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 11%;
+        top: 180%;
+    }
+    
+    .ep:hover ~ .vid,#c12 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 53%;
+        top: 180%;
+    }
+    .ep:hover ~ .vid,#c13 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 11%;
+        top:210%;
+    }
+    
+    .ep:hover ~ .vid,#c14 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 53%;
+        top: 210%;
+    }
+    .ep:hover ~ .vid,#c15 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 11%;
+        top: 240%;
+    }
+    
+    .ep:hover ~ .vid,#c16 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 53%;
+        top: 240%;
+    }
+    .ep:hover ~ .vid,#c17 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 11%;
+        top:270%;
+    }
+    
+    .ep:hover ~ .vid,#c18 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 53%;
+        top: 270%;
+    }
+    .ep:hover ~ .vid,#c19 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 11%;
+        top: 300%;
+    }
+    
+    .ep:hover ~ .vid,#c20 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 53%;
+        top: 300%;
+    }
+    .ep:hover ~ .vid,#c21 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 11%;
+        top:330%;
+    }
+    
+    .ep:hover ~ .vid,#c22 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 53%;
+        top: 330%;
+    }
+    .ep:hover ~ .vid,#c23 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 11%;
+        top: 360%;
+    }
+    
+    .ep:hover ~ .vid,#c24 {
+        visibility: visible;
+        opacity: 1;
+        height: 200px; 
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 53%;
+        top: 360%;
+    }
+    
+    
+
+    .title-area {
+        width: 70%;
+        margin-left: 15%;
+        margin-top: 20px;
+        margin-bottom: 20px; 
+    }
+    .ep:hover ~ .vid {
+        visibility: visible;
+        opacity: 1;
+        height: 120%; 
+        width: 100%;
+        position: absolute;
+        top: 0;
+        top: -12%;  
+        left: -5%; 
+    }
+    .rating{
+        left: -.5%;
+        width: 100%;
+        top: 115px;
+    }
+}
+
+
+
+@media only screen and (min-width: 1037px) and (max-width: 1386px) {
+        .container .ep{
+            width: 50%;
+            left: 10%;
+        }
+        #c1,#c2,#c3,#c4{
+            top: 30%;
+        }
+        #c5,#c6,#c7,#c8{
+            top: 60%;
+        }
+        #c9,#c10,#c11,#c12{
+            top: 90%;
+        }
+        #c13,#c14,#c15,#c16{
+            top: 120%;
+        }
+        #c17,#c18,#c19,#c20{
+            top: 150%;
+        }
+        #c21,#c22,#c23,#c24{
+            top: 180%;
+        }
+    
+        .title-area {
+            width: 60%;
+            margin-left: 20%;
+            margin-top: 30px; 
+            margin-bottom: 30px; 
+        }
+        .ep:hover ~ .vid{
+            visibility: visible;
+            opacity: 1;
+            height: 120%; 
+            width: 100%;
+            position: absolute;
+            top: 0;
+            top: -5%;  
+            left: -20%; 
+        }
+        
+        .rating {
+            left: -2%;
+            top: 8px; 
+            width: 100%;
+         }
+}
+    
